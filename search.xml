@@ -1,8 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>CSS盒模型</title>
+    <url>/2020/04/17/CSS%E7%9B%92%E6%A8%A1%E5%9E%8B/</url>
+    <content><![CDATA[<h5 id="CSS盒模型，可以认为每个html标签都是一个方块，然后这个方块又包着几个小方块，如同盒子一层层的包裹着。"><a href="#CSS盒模型，可以认为每个html标签都是一个方块，然后这个方块又包着几个小方块，如同盒子一层层的包裹着。" class="headerlink" title="CSS盒模型，可以认为每个html标签都是一个方块，然后这个方块又包着几个小方块，如同盒子一层层的包裹着。"></a>CSS盒模型，可以认为每个html标签都是一个方块，然后这个方块又包着几个小方块，如同盒子一层层的包裹着。</h5><blockquote>
+<p>“every element in web design is a rectangular box”</p>
+</blockquote>
+<a id="more"></a>
+
+<h5 id="盒模型包括：内容-content-、内边距-padding-、外边距-margin-、边框-border-。"><a href="#盒模型包括：内容-content-、内边距-padding-、外边距-margin-、边框-border-。" class="headerlink" title="盒模型包括：内容(content) 、内边距(padding)、外边距(margin)、边框(border)。"></a>盒模型包括：内容(content) 、内边距(padding)、外边距(margin)、边框(border)。</h5><p><img src="https://user-gold-cdn.xitu.io/2017/10/25/9cb491d4bd5d326aeb16632280411283?imageView2/0/w/1280/h/960/format/webp/ignore-error/1" alt="img"></p>
+<h5 id="盒模型主要分为两种：标准盒模型-box-sizing-content-box-、IE盒模型-box-sizing-border-box"><a href="#盒模型主要分为两种：标准盒模型-box-sizing-content-box-、IE盒模型-box-sizing-border-box" class="headerlink" title="盒模型主要分为两种：标准盒模型(box-sizing: content-box;)、IE盒模型(box-sizing: border-box)"></a>盒模型主要分为两种：标准盒模型(box-sizing: content-box;)、IE盒模型(box-sizing: border-box)</h5><h5 id="CSS3新增了一种类型：box-sizing-padding-box"><a href="#CSS3新增了一种类型：box-sizing-padding-box" class="headerlink" title="CSS3新增了一种类型：box-sizing: padding-box;"></a>CSS3新增了一种类型：box-sizing: padding-box;</h5><h2 id="盒模型的区别"><a href="#盒模型的区别" class="headerlink" title="盒模型的区别"></a>盒模型的区别</h2><h5 id="标准盒模型content-box（默认）"><a href="#标准盒模型content-box（默认）" class="headerlink" title="标准盒模型content-box（默认）"></a>标准盒模型content-box（默认）</h5><p>布局所占宽度Width：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Width &#x3D; width + padding-left + padding-right + border-left + border-right</span><br></pre></td></tr></table></figure>
+
+<p>布局所占高度Height:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Height &#x3D; height + padding-top + padding-bottom + border-top + border-bottom</span><br></pre></td></tr></table></figure>
+
+<h5 id="IE盒模型border-box"><a href="#IE盒模型border-box" class="headerlink" title="IE盒模型border-box"></a>IE盒模型border-box</h5><p>布局所占宽度Width：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Width &#x3D; width(包含padding-left + padding-right + border-left + border-right)</span><br></pre></td></tr></table></figure>
+
+<p>布局所占高度Height:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Height &#x3D; height(包含padding-top + padding-bottom + border-top + border-bottom)</span><br></pre></td></tr></table></figure>
+
+<h5 id="padding-box"><a href="#padding-box" class="headerlink" title="padding-box"></a>padding-box</h5><p>布局所占宽度Width：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Width &#x3D; width(包含padding-left + padding-right) + border-top + border-bottom</span><br></pre></td></tr></table></figure>
+
+<p>布局所占高度Height:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Height &#x3D; height(包含padding-top + padding-bottom) + border-top + border-bottom</span><br></pre></td></tr></table></figure>
+
+<h5 id="注意：宽度是不包括margin的"><a href="#注意：宽度是不包括margin的" class="headerlink" title="注意：宽度是不包括margin的"></a>注意：宽度是不包括margin的</h5><h2 id="盒模型使用"><a href="#盒模型使用" class="headerlink" title="盒模型使用"></a>盒模型使用</h2><h5 id="我们在编写页面代码时应尽量使用标准盒模型，需要在页面第一行声明DOCTYPE文档类型，就会默认使用标准盒模型了。若不声明DOCTYPE类型，IE浏览器会将盒子模型解释为IE盒子模型。"><a href="#我们在编写页面代码时应尽量使用标准盒模型，需要在页面第一行声明DOCTYPE文档类型，就会默认使用标准盒模型了。若不声明DOCTYPE类型，IE浏览器会将盒子模型解释为IE盒子模型。" class="headerlink" title="我们在编写页面代码时应尽量使用标准盒模型，需要在页面第一行声明DOCTYPE文档类型，就会默认使用标准盒模型了。若不声明DOCTYPE类型，IE浏览器会将盒子模型解释为IE盒子模型。"></a>我们在编写页面代码时应尽量使用标准盒模型，需要在页面第一行声明DOCTYPE文档类型，就会默认使用标准盒模型了。若不声明DOCTYPE类型，IE浏览器会将盒子模型解释为IE盒子模型。</h5><h2 id="margin叠加"><a href="#margin叠加" class="headerlink" title="margin叠加"></a>margin叠加</h2><p>外边距叠加是一个相当简单的概念。 但是，在实践中对网页进行布局时， 它会造成许多混淆。 简单的说， 当两个或更多个垂直边距相遇时， 它们将形成一个外边距。这个外边距的高度等于两个发生叠加的外边距的高度中的较大者。但是注意只有普通文档流中块框的垂直外边距才会发生外边距叠加。 行内框、 浮动框或绝对定位框之间的外边距不会叠加。</p>
+<p>一般来说， 垂直外边距叠加有三种情况：</p>
+<ul>
+<li>元素自身叠加 当元素没有内容（即空元素）、内边距、边框时， 它的上下边距就相遇了， 即会产生叠加（垂直方向）。 当为元素添加内容、 内边距、 边框任何一项， 就会取消叠加。</li>
+<li>相邻元素叠加 相邻的两个元素， 如果它们的上下边距相遇，即会产生叠加。</li>
+<li>包含（父子）元素叠加 包含元素的外边距隔着 父元素的内边距和边框， 当这两项都不存在的时候， 父子元素垂直外边距相邻， 产生叠加。 添加任何一项即会取消叠加。</li>
+</ul>
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><ul>
+<li><a href="https://juejin.im/post/59ef72f5f265da4320026f76" target="_blank" rel="noopener">CSS盒模型详解</a></li>
+<li><a href="https://adamschwartz.co/magic-of-css/chapters/1-the-box/" target="_blank" rel="noopener">CSS Magic: The Box</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>CSS</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>《Effective JavaScript编写高质量JavaSctipt代码的68个有效方法》读书笔记</title>
-    <url>/2021/01/24/%E3%80%8AEffective%20JavaScript%E7%BC%96%E5%86%99%E9%AB%98%E8%B4%A8%E9%87%8FJavaSctipt%E4%BB%A3%E7%A0%81%E7%9A%8468%E4%B8%AA%E6%9C%89%E6%95%88%E6%96%B9%E6%B3%95%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</url>
+    <url>/2020/03/10/%E3%80%8AEffective%20JavaScript%E7%BC%96%E5%86%99%E9%AB%98%E8%B4%A8%E9%87%8FJavaSctipt%E4%BB%A3%E7%A0%81%E7%9A%8468%E4%B8%AA%E6%9C%89%E6%95%88%E6%96%B9%E6%B3%95%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<p>《Effective JavaScript编写高质量JavaSctipt代码的68个有效方法》这本书中有关js的概念虽然有些已经有些过时了，但是知识点都还是比较准确的。坚持看下来后，还是对每个知识点做了整理，方便查阅。</p>
 <a id="more"></a>
 
@@ -448,54 +494,8 @@
       </tags>
   </entry>
   <entry>
-    <title>CSS盒模型</title>
-    <url>/2021/01/24/CSS%E7%9B%92%E6%A8%A1%E5%9E%8B/</url>
-    <content><![CDATA[<h5 id="CSS盒模型，可以认为每个html标签都是一个方块，然后这个方块又包着几个小方块，如同盒子一层层的包裹着。"><a href="#CSS盒模型，可以认为每个html标签都是一个方块，然后这个方块又包着几个小方块，如同盒子一层层的包裹着。" class="headerlink" title="CSS盒模型，可以认为每个html标签都是一个方块，然后这个方块又包着几个小方块，如同盒子一层层的包裹着。"></a>CSS盒模型，可以认为每个html标签都是一个方块，然后这个方块又包着几个小方块，如同盒子一层层的包裹着。</h5><blockquote>
-<p>“every element in web design is a rectangular box”</p>
-</blockquote>
-<a id="more"></a>
-
-<h5 id="盒模型包括：内容-content-、内边距-padding-、外边距-margin-、边框-border-。"><a href="#盒模型包括：内容-content-、内边距-padding-、外边距-margin-、边框-border-。" class="headerlink" title="盒模型包括：内容(content) 、内边距(padding)、外边距(margin)、边框(border)。"></a>盒模型包括：内容(content) 、内边距(padding)、外边距(margin)、边框(border)。</h5><p><img src="https://user-gold-cdn.xitu.io/2017/10/25/9cb491d4bd5d326aeb16632280411283?imageView2/0/w/1280/h/960/format/webp/ignore-error/1" alt="img"></p>
-<h5 id="盒模型主要分为两种：标准盒模型-box-sizing-content-box-、IE盒模型-box-sizing-border-box"><a href="#盒模型主要分为两种：标准盒模型-box-sizing-content-box-、IE盒模型-box-sizing-border-box" class="headerlink" title="盒模型主要分为两种：标准盒模型(box-sizing: content-box;)、IE盒模型(box-sizing: border-box)"></a>盒模型主要分为两种：标准盒模型(box-sizing: content-box;)、IE盒模型(box-sizing: border-box)</h5><h5 id="CSS3新增了一种类型：box-sizing-padding-box"><a href="#CSS3新增了一种类型：box-sizing-padding-box" class="headerlink" title="CSS3新增了一种类型：box-sizing: padding-box;"></a>CSS3新增了一种类型：box-sizing: padding-box;</h5><h2 id="盒模型的区别"><a href="#盒模型的区别" class="headerlink" title="盒模型的区别"></a>盒模型的区别</h2><h5 id="标准盒模型content-box（默认）"><a href="#标准盒模型content-box（默认）" class="headerlink" title="标准盒模型content-box（默认）"></a>标准盒模型content-box（默认）</h5><p>布局所占宽度Width：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Width &#x3D; width + padding-left + padding-right + border-left + border-right</span><br></pre></td></tr></table></figure>
-
-<p>布局所占高度Height:</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Height &#x3D; height + padding-top + padding-bottom + border-top + border-bottom</span><br></pre></td></tr></table></figure>
-
-<h5 id="IE盒模型border-box"><a href="#IE盒模型border-box" class="headerlink" title="IE盒模型border-box"></a>IE盒模型border-box</h5><p>布局所占宽度Width：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Width &#x3D; width(包含padding-left + padding-right + border-left + border-right)</span><br></pre></td></tr></table></figure>
-
-<p>布局所占高度Height:</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Height &#x3D; height(包含padding-top + padding-bottom + border-top + border-bottom)</span><br></pre></td></tr></table></figure>
-
-<h5 id="padding-box"><a href="#padding-box" class="headerlink" title="padding-box"></a>padding-box</h5><p>布局所占宽度Width：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Width &#x3D; width(包含padding-left + padding-right) + border-top + border-bottom</span><br></pre></td></tr></table></figure>
-
-<p>布局所占高度Height:</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Height &#x3D; height(包含padding-top + padding-bottom) + border-top + border-bottom</span><br></pre></td></tr></table></figure>
-
-<h5 id="注意：宽度是不包括margin的"><a href="#注意：宽度是不包括margin的" class="headerlink" title="注意：宽度是不包括margin的"></a>注意：宽度是不包括margin的</h5><h2 id="盒模型使用"><a href="#盒模型使用" class="headerlink" title="盒模型使用"></a>盒模型使用</h2><h5 id="我们在编写页面代码时应尽量使用标准盒模型，需要在页面第一行声明DOCTYPE文档类型，就会默认使用标准盒模型了。若不声明DOCTYPE类型，IE浏览器会将盒子模型解释为IE盒子模型。"><a href="#我们在编写页面代码时应尽量使用标准盒模型，需要在页面第一行声明DOCTYPE文档类型，就会默认使用标准盒模型了。若不声明DOCTYPE类型，IE浏览器会将盒子模型解释为IE盒子模型。" class="headerlink" title="我们在编写页面代码时应尽量使用标准盒模型，需要在页面第一行声明DOCTYPE文档类型，就会默认使用标准盒模型了。若不声明DOCTYPE类型，IE浏览器会将盒子模型解释为IE盒子模型。"></a>我们在编写页面代码时应尽量使用标准盒模型，需要在页面第一行声明DOCTYPE文档类型，就会默认使用标准盒模型了。若不声明DOCTYPE类型，IE浏览器会将盒子模型解释为IE盒子模型。</h5><h2 id="margin叠加"><a href="#margin叠加" class="headerlink" title="margin叠加"></a>margin叠加</h2><p>外边距叠加是一个相当简单的概念。 但是，在实践中对网页进行布局时， 它会造成许多混淆。 简单的说， 当两个或更多个垂直边距相遇时， 它们将形成一个外边距。这个外边距的高度等于两个发生叠加的外边距的高度中的较大者。但是注意只有普通文档流中块框的垂直外边距才会发生外边距叠加。 行内框、 浮动框或绝对定位框之间的外边距不会叠加。</p>
-<p>一般来说， 垂直外边距叠加有三种情况：</p>
-<ul>
-<li>元素自身叠加 当元素没有内容（即空元素）、内边距、边框时， 它的上下边距就相遇了， 即会产生叠加（垂直方向）。 当为元素添加内容、 内边距、 边框任何一项， 就会取消叠加。</li>
-<li>相邻元素叠加 相邻的两个元素， 如果它们的上下边距相遇，即会产生叠加。</li>
-<li>包含（父子）元素叠加 包含元素的外边距隔着 父元素的内边距和边框， 当这两项都不存在的时候， 父子元素垂直外边距相邻， 产生叠加。 添加任何一项即会取消叠加。</li>
-</ul>
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><ul>
-<li><a href="https://juejin.im/post/59ef72f5f265da4320026f76" target="_blank" rel="noopener">CSS盒模型详解</a></li>
-<li><a href="https://adamschwartz.co/magic-of-css/chapters/1-the-box/" target="_blank" rel="noopener">CSS Magic: The Box</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>前端</category>
-      </categories>
-      <tags>
-        <tag>CSS</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>理解闭包——你只要学会三个基本事实</title>
-    <url>/2021/01/24/%E7%90%86%E8%A7%A3%E9%97%AD%E5%8C%85%E2%80%94%E2%80%94%E4%BD%A0%E5%8F%AA%E8%A6%81%E5%AD%A6%E4%BC%9A%E4%B8%89%E4%B8%AA%E5%9F%BA%E6%9C%AC%E4%BA%8B%E5%AE%9E/</url>
+    <url>/2020/01/24/%E7%90%86%E8%A7%A3%E9%97%AD%E5%8C%85%E2%80%94%E2%80%94%E4%BD%A0%E5%8F%AA%E8%A6%81%E5%AD%A6%E4%BC%9A%E4%B8%89%E4%B8%AA%E5%9F%BA%E6%9C%AC%E4%BA%8B%E5%AE%9E/</url>
     <content><![CDATA[<p>学习JavaScript的小伙伴一定都听说过闭包这个概念，但是真正你真的理解闭包了吗？理解闭包其实没有那么困难，只需要学会三个基本的事实。</p>
 <a id="more"></a>
 
